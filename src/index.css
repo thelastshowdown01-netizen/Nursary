@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-verdant: #0D3F27;
+  --color-moss: #4D8068;
+  --color-leafy: #92B973;
+  --color-dewdrop: #B7D1A1;
+  --color-petal: #D9EBCC;
+  --color-whisper: #F5FAF0;
+  --color-accent: #E68A2E; 
+
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "Space Mono", monospace;
+  --font-sans: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--color-petal);
+  color: var(--color-verdant);
+  font-family: var(--font-sans);
+}
+
+.bento-card {
+  @apply rounded-[2rem] overflow-hidden relative;
+}
